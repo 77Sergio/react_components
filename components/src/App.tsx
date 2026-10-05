@@ -1,24 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Hola2 from './components/Hola2';
+import ComponenteFuncional from './components/ComponenteFuncional';
+import ComponenteEdad from './components/ComponenteEdad';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hola2 nombre= {'Manolo'} />
+      <ComponenteFuncional apellido={"castaneda"}/>
+      <ComponenteEdad edad={49}/>
     </div>
   );
 }
